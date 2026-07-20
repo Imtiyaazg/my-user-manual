@@ -1,0 +1,19 @@
+/* Kuat elevation tokens. A single soft, cool-tinted shadow family used across
+ * cards, popovers, dropdowns and dialogs. Mirrors kuat-core (light theme). */
+
+:root {
+  --shadow-color: 222.34 49.39% 11.3%;
+
+  --shadow-2xs: 0px 4px 8px -1px hsl(var(--shadow-color) / 0.05);
+  --shadow-xs:  0px 4px 8px -1px hsl(var(--shadow-color) / 0.05);
+  --shadow-sm:  0px 4px 8px -1px hsl(var(--shadow-color) / 0.10), 0px 1px 2px -2px hsl(var(--shadow-color) / 0.10);
+  --shadow:     0px 4px 8px -1px hsl(var(--shadow-color) / 0.10), 0px 1px 2px -2px hsl(var(--shadow-color) / 0.10);
+  --shadow-md:  0px 4px 8px -1px hsl(var(--shadow-color) / 0.10), 0px 2px 4px -2px hsl(var(--shadow-color) / 0.10);
+  --shadow-lg:  0px 4px 8px -1px hsl(var(--shadow-color) / 0.10), 0px 4px 6px -2px hsl(var(--shadow-color) / 0.10);
+  --shadow-xl:  0px 4px 8px -1px hsl(var(--shadow-color) / 0.10), 0px 8px 10px -2px hsl(var(--shadow-color) / 0.10);
+  --shadow-2xl: 0px 4px 8px -1px hsl(var(--shadow-color) / 0.25);
+}
+
+.dark {
+  --shadow-color: 0 0% 0%;
+}

@@ -1,0 +1,158 @@
+/* Kuat colour foundations.
+ * Brand palettes (EE Blue, Tech Blue, Transform Teal, Equal Ember) plus the
+ * Tailwind-aligned neutral scales the system draws on. Values mirror
+ * @equal-experts/kuat-core (oklch in source; hex kept here for portability). */
+
+:root {
+  /* ---- Neutral / utility ---- */
+  --black: #000000;
+  --white: #ffffff;
+
+  /* Slate (primary neutral ramp) */
+  --slate-50:  #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-800: #1e293b;
+  --slate-900: #0f172a;
+  --slate-950: #020617;
+
+  /* Neutral (shadcn base ramp) */
+  --neutral-50:  #fafafa;
+  --neutral-100: #f5f5f5;
+  --neutral-200: #e5e5e5;
+  --neutral-300: #d4d4d4;
+  --neutral-400: #a3a3a3;
+  --neutral-500: #737373;
+  --neutral-600: #525252;
+  --neutral-700: #404040;
+  --neutral-800: #262626;
+  --neutral-900: #171717;
+  --neutral-950: #0a0a0a;
+
+  /* Semantic status ramps */
+  --red-50:  #fef2f2;
+  --red-100: #ffe2e2;
+  --red-200: #fecaca;
+  --red-300: #fca5a5;
+  --red-400: #f87171;
+  --red-500: #ef4444;
+  --red-600: #dc2626;
+  --red-700: #b91c1c;
+  --red-800: #991b1b;
+  --red-900: #7f1d1d;
+  --red-950: #450a0a;
+
+  --green-50:  #f0fdf4;
+  --green-100: #dcfce7;
+  --green-200: #bbf7d0;
+  --green-300: #86efac;
+  --green-400: #4ade80;
+  --green-500: #22c55e;
+  --green-600: #16a34a;
+  --green-700: #15803d;
+  --green-800: #166534;
+  --green-900: #14532d;
+  --green-950: #052e16;
+
+  --amber-50:  #fffbeb;
+  --amber-100: #fef3c7;
+  --amber-200: #fde68a;
+  --amber-300: #fcd34d;
+  --amber-400: #fbbf24;
+  --amber-500: #f59e0b;
+  --amber-600: #d97706;
+  --amber-700: #b45309;
+  --amber-800: #92640e;
+  --amber-900: #78350f;
+  --amber-950: #451a03;
+
+  --indigo-300: #a5b4fc;
+
+  /* ---- EE Blue (primary brand) ---- */
+  --ee-blue-50:  #e6f5fc;
+  --ee-blue-100: #b3e2f7;
+  --ee-blue-200: #80cff2;
+  --ee-blue-300: #4dbced;
+  --ee-blue-400: #26a8e3;
+  --ee-blue-500: #1795d4;
+  --ee-blue-600: #1378ae;
+  --ee-blue-700: #105c88;
+  --ee-blue-800: #0c4062;
+  --ee-blue-900: #08243c;
+  --ee-blue-950: #04121e;
+
+  /* ---- Tech Blue (deep brand neutral) ---- */
+  --tech-blue-50:  #e8eef3;
+  --tech-blue-100: #bdcfdc;
+  --tech-blue-200: #92b0c5;
+  --tech-blue-300: #6791ae;
+  --tech-blue-400: #447496;
+  --tech-blue-500: #22567c;
+  --tech-blue-600: #1b4563;
+  --tech-blue-700: #15354a;
+  --tech-blue-800: #0e2431;
+  --tech-blue-900: #071218;
+  --tech-blue-950: #03090c;
+
+  /* ---- Transform Teal (secondary brand) ---- */
+  --transform-teal-50:  #e9f6f6;
+  --transform-teal-100: #bfe7e7;
+  --transform-teal-200: #95d8d9;
+  --transform-teal-300: #6bc9ca;
+  --transform-teal-400: #48b8b9;
+  --transform-teal-500: #269c9e;
+  --transform-teal-600: #1f7d7e;
+  --transform-teal-700: #175e5f;
+  --transform-teal-800: #103f3f;
+  --transform-teal-900: #081f20;
+  --transform-teal-950: #040f10;
+
+  /* ---- Equal Ember (accent brand) ---- */
+  --equal-ember-50:  #fff3e6;
+  --equal-ember-100: #ffdbb3;
+  --equal-ember-200: #ffc380;
+  --equal-ember-300: #ffab4d;
+  --equal-ember-400: #ff941a;
+  --equal-ember-500: #f07c00;
+  --equal-ember-600: #c06300;
+  --equal-ember-700: #904a00;
+  --equal-ember-800: #603100;
+  --equal-ember-900: #301900;
+  --equal-ember-950: #180c00;
+
+  /* ---- Brand aliases ---- */
+  --brand-ee-blue: var(--ee-blue-500);
+  --brand-tech-blue: var(--tech-blue-500);
+  --brand-transform-teal: var(--transform-teal-500);
+  --brand-equal-ember: var(--equal-ember-500);
+  --brand-dark-data: #212526;
+  --brand-the-cloud: #f5f5f5;
+  --brand-byte-white: var(--white);
+  --brand-ee-blue-accent: var(--ee-blue-50);
+
+  /* ---- Chart: legacy categorical ---- */
+  --chart-1: #1f77b4;
+  --chart-2: #ff7f0e;
+  --chart-3: #2ca02c;
+  --chart-4: #d62728;
+  --chart-5: #9467bd;
+
+  /* ---- Chart: brand static ramps (selected) ---- */
+  --chart-blue-1: #8ec5ff;
+  --chart-blue-2: #2b7fff;
+  --chart-blue-3: #155dfc;
+  --chart-teal-1: #46edd5;
+  --chart-teal-2: #00bba7;
+  --chart-teal-3: #009689;
+  --chart-amber-1: #ffd230;
+  --chart-amber-2: #fe9a00;
+  --chart-amber-3: #e17100;
+  --chart-orange-1: #ffb86a;
+  --chart-orange-2: #ff6900;
+  --chart-orange-3: #f54a00;
+}

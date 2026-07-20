@@ -1,0 +1,87 @@
+/* Kuat Button colour tokens — skin × variant × state.
+ * Skins: ee-blue, tech-blue, transform-teal, equal-ember, byte-white, the-cloud, dark-data.
+ * Variants: primary, secondary, outline, ghost, ghost-muted, destructive.
+ * Mirrors @equal-experts/kuat-core/button-variables.css. */
+
+:root {
+  /* === ee-blue === */
+  --kuat-button-ee-blue-primary-background: var(--brand-ee-blue);
+  --kuat-button-ee-blue-primary-background--hover: var(--ee-blue-600);
+  --kuat-button-ee-blue-primary-background--active: var(--ee-blue-700);
+  --kuat-button-ee-blue-primary-background--disabled: var(--slate-200);
+  --kuat-button-ee-blue-primary-foreground: var(--brand-byte-white);
+  --kuat-button-ee-blue-primary-foreground--disabled: var(--slate-500);
+  --kuat-button-ee-blue-secondary-background: var(--ee-blue-100);
+  --kuat-button-ee-blue-secondary-background--hover: var(--ee-blue-200);
+  --kuat-button-ee-blue-secondary-background--active: var(--ee-blue-300);
+  --kuat-button-ee-blue-secondary-foreground: var(--brand-ee-blue);
+  --kuat-button-ee-blue-outline-background--hover: var(--ee-blue-50);
+  --kuat-button-ee-blue-outline-background--active: var(--ee-blue-100);
+  --kuat-button-ee-blue-outline-foreground: var(--brand-ee-blue);
+  --kuat-button-ee-blue-outline-border: var(--brand-ee-blue);
+  --kuat-button-ee-blue-ghost-background--hover: var(--ee-blue-50);
+  --kuat-button-ee-blue-ghost-background--active: var(--ee-blue-100);
+  --kuat-button-ee-blue-ghost-foreground: var(--brand-ee-blue);
+
+  /* === tech-blue === */
+  --kuat-button-tech-blue-primary-background: var(--brand-tech-blue);
+  --kuat-button-tech-blue-primary-background--hover: var(--tech-blue-600);
+  --kuat-button-tech-blue-primary-background--active: var(--tech-blue-700);
+  --kuat-button-tech-blue-primary-background--disabled: var(--slate-200);
+  --kuat-button-tech-blue-primary-foreground: var(--brand-byte-white);
+  --kuat-button-tech-blue-secondary-background: var(--tech-blue-100);
+  --kuat-button-tech-blue-secondary-background--hover: var(--tech-blue-200);
+  --kuat-button-tech-blue-secondary-background--active: var(--tech-blue-300);
+  --kuat-button-tech-blue-secondary-foreground: var(--brand-tech-blue);
+  --kuat-button-tech-blue-outline-background--hover: var(--tech-blue-50);
+  --kuat-button-tech-blue-outline-background--active: var(--tech-blue-100);
+  --kuat-button-tech-blue-outline-foreground: var(--brand-tech-blue);
+  --kuat-button-tech-blue-outline-border: var(--brand-tech-blue);
+  --kuat-button-tech-blue-ghost-background--hover: var(--tech-blue-50);
+  --kuat-button-tech-blue-ghost-background--active: var(--tech-blue-100);
+  --kuat-button-tech-blue-ghost-foreground: var(--brand-tech-blue);
+
+  /* === transform-teal === */
+  --kuat-button-transform-teal-primary-background: var(--brand-transform-teal);
+  --kuat-button-transform-teal-primary-background--hover: var(--transform-teal-600);
+  --kuat-button-transform-teal-primary-background--active: var(--transform-teal-700);
+  --kuat-button-transform-teal-primary-background--disabled: var(--slate-200);
+  --kuat-button-transform-teal-primary-foreground: var(--brand-byte-white);
+  --kuat-button-transform-teal-secondary-background: var(--transform-teal-100);
+  --kuat-button-transform-teal-secondary-background--hover: var(--transform-teal-200);
+  --kuat-button-transform-teal-secondary-background--active: var(--transform-teal-300);
+  --kuat-button-transform-teal-secondary-foreground: var(--brand-transform-teal);
+  --kuat-button-transform-teal-outline-background--hover: var(--transform-teal-50);
+  --kuat-button-transform-teal-outline-background--active: var(--transform-teal-100);
+  --kuat-button-transform-teal-outline-foreground: var(--brand-transform-teal);
+  --kuat-button-transform-teal-outline-border: var(--brand-transform-teal);
+  --kuat-button-transform-teal-ghost-background--hover: var(--transform-teal-50);
+  --kuat-button-transform-teal-ghost-background--active: var(--transform-teal-100);
+  --kuat-button-transform-teal-ghost-foreground: var(--brand-transform-teal);
+
+  /* === equal-ember === */
+  --kuat-button-equal-ember-primary-background: var(--brand-equal-ember);
+  --kuat-button-equal-ember-primary-background--hover: var(--equal-ember-600);
+  --kuat-button-equal-ember-primary-background--active: var(--equal-ember-700);
+  --kuat-button-equal-ember-primary-background--disabled: var(--slate-200);
+  --kuat-button-equal-ember-primary-foreground: var(--brand-byte-white);
+  --kuat-button-equal-ember-secondary-background: var(--equal-ember-100);
+  --kuat-button-equal-ember-secondary-background--hover: var(--equal-ember-200);
+  --kuat-button-equal-ember-secondary-background--active: var(--equal-ember-300);
+  --kuat-button-equal-ember-secondary-foreground: var(--brand-equal-ember);
+  --kuat-button-equal-ember-outline-background--hover: var(--equal-ember-50);
+  --kuat-button-equal-ember-outline-background--active: var(--equal-ember-100);
+  --kuat-button-equal-ember-outline-foreground: var(--brand-equal-ember);
+  --kuat-button-equal-ember-outline-border: var(--brand-equal-ember);
+  --kuat-button-equal-ember-ghost-background--hover: var(--equal-ember-50);
+  --kuat-button-equal-ember-ghost-background--active: var(--equal-ember-100);
+  --kuat-button-equal-ember-ghost-foreground: var(--brand-equal-ember);
+
+  /* === shared === */
+  --kuat-button-destructive-background: var(--red-600);
+  --kuat-button-destructive-background--hover: var(--red-700);
+  --kuat-button-destructive-foreground: var(--brand-byte-white);
+  --kuat-button-ghost-muted-background--hover: var(--slate-100);
+  --kuat-button-ghost-muted-background--active: var(--slate-200);
+  --kuat-button-ghost-muted-foreground: var(--slate-700);
+}

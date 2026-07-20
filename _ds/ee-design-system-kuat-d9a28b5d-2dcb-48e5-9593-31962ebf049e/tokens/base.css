@@ -1,0 +1,54 @@
+/* Kuat base layer — light resets and brand-default typography.
+ * Intentionally minimal so consumers can layer their own app styles on top. */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-base);
+  letter-spacing: var(--tracking-normal);
+  color: var(--foreground);
+  background: var(--background);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headings default to Lexend semibold with tightened tracking. */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-semibold);
+  margin: 0;
+  color: var(--foreground);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+
+code, kbd, samp, pre {
+  font-family: var(--font-mono);
+}
+
+/* Optional typographic helpers — opt in by class. */
+.kuat-display { font-size: var(--text-display); line-height: var(--leading-display); letter-spacing: var(--tracking-display); font-weight: var(--font-weight-semibold); }
+.kuat-h1 { font-size: var(--text-h1); line-height: var(--leading-h1); letter-spacing: var(--tracking-h1); font-weight: var(--font-weight-semibold); }
+.kuat-h2 { font-size: var(--text-h2); line-height: var(--leading-h2); letter-spacing: var(--tracking-h2); font-weight: var(--font-weight-semibold); }
+.kuat-h3 { font-size: var(--text-h3); line-height: var(--leading-h3); letter-spacing: var(--tracking-h3); font-weight: var(--font-weight-semibold); }
+.kuat-h4 { font-size: var(--text-h4); line-height: var(--leading-h4); font-weight: var(--font-weight-semibold); }
+.kuat-body { font-size: var(--text-base); line-height: var(--leading-base); }
+.kuat-small { font-size: var(--text-sm); line-height: var(--leading-sm); }
+.kuat-muted { color: var(--muted-foreground); }
+.kuat-serif { font-family: var(--font-serif); }
+.kuat-mono { font-family: var(--font-mono); }
