@@ -521,11 +521,9 @@ code, kbd, samp, pre {
 @import "./tokens/button-variables.css";
 @import "./tokens/base.css";
 
-
     body { margin: 0; background: var(--slate-100); }
     a { color: var(--ee-blue-600); text-decoration: none; }
     a:hover { color: var(--ee-blue-700); text-decoration: underline; }
-  
 
 @keyframes livepulse { 0%,100%{opacity:1; transform:scale(1);} 50%{opacity:.45; transform:scale(.8);} }
 .version-badge{position:absolute; top:22px; right:26px; display:inline-flex; align-items:center; gap:8px;
@@ -590,6 +588,13 @@ html[data-theme="dark"] section:hover{ box-shadow: 0 6px 18px rgba(0,0,0,.45); }
   100%{ bottom:105vh; transform:rotate(0deg); } }
 @media (prefers-reduced-motion: reduce){ .climber-egg{ display:none; } }
 </style>
+<meta property="og:title" content="Working with Imti">
+<meta property="og:description" content="A short guide to how I work, how I communicate, and how we'll get the best out of working together.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://YOUR-USERNAME.github.io/my-user-manual/og-photo.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%2322567c%22/><text y=%2272%22 x=%2250%22 text-anchor=%22middle%22 font-size=%2260%22>&#129495;</text></svg>">
 </head>
 <body>
 <div style="min-height:100%; background:var(--slate-100); font-family:'Lexend',system-ui,sans-serif; color:var(--slate-900); padding:56px 20px 80px; box-sizing:border-box;">
@@ -617,7 +622,7 @@ html[data-theme="dark"] section:hover{ box-shadow: 0 6px 18px rgba(0,0,0,.45); }
     <!-- Where and when I work -->
     <section style="background:var(--card-bg, #fff); border:1px solid var(--border); border-radius:14px; padding:30px 32px; box-shadow:var(--shadow-xs); display:flex; flex-direction:column; gap:18px;">
       <div style="display:flex; align-items:center; gap:14px;">
-        <span style="flex:none; font-size:30px; line-height:1;">⏰</span>
+        <span aria-hidden="true" style="flex:none; font-size:30px; line-height:1;">⏰</span>
         <h2 style="margin:0; font-size:21px; font-weight:600; letter-spacing:-.4px;">Where &amp; when I work</h2>
       </div>
       <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:13px;">
@@ -636,7 +641,7 @@ html[data-theme="dark"] section:hover{ box-shadow: 0 6px 18px rgba(0,0,0,.45); }
     <!-- Communication -->
     <section style="background:var(--card-bg, #fff); border:1px solid var(--border); border-radius:14px; padding:30px 32px; box-shadow:var(--shadow-xs); display:flex; flex-direction:column; gap:18px;">
       <div style="display:flex; align-items:center; gap:14px;">
-        <span style="flex:none; font-size:30px; line-height:1;">💬</span>
+        <span aria-hidden="true" style="flex:none; font-size:30px; line-height:1;">💬</span>
         <h2 style="margin:0; font-size:21px; font-weight:600; letter-spacing:-.4px;">Communication</h2>
       </div>
       <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:13px;">
@@ -653,7 +658,7 @@ html[data-theme="dark"] section:hover{ box-shadow: 0 6px 18px rgba(0,0,0,.45); }
     <!-- What you can expect from me -->
     <section style="background:var(--card-bg, #fff); border:1px solid var(--border); border-radius:14px; padding:30px 32px; box-shadow:var(--shadow-xs); display:flex; flex-direction:column; gap:18px;">
       <div style="display:flex; align-items:center; gap:14px;">
-        <span style="flex:none; font-size:30px; line-height:1;">🤝</span>
+        <span aria-hidden="true" style="flex:none; font-size:30px; line-height:1;">🤝</span>
         <h2 style="margin:0; font-size:21px; font-weight:600; letter-spacing:-.4px;">What you can expect from me</h2>
       </div>
       <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:13px;">
@@ -665,9 +670,10 @@ html[data-theme="dark"] section:hover{ box-shadow: 0 6px 18px rgba(0,0,0,.45); }
 
     <!-- Two-up: hobbies + dislikes -->
     <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
-      <section style="background:var(--card-bg, #fff); border:1px solid var(--border); border-radius:14px; padding:30px 32px; box-shadow:var(--shadow-xs); display:flex; flex-direction:column; gap:16px;">
+
+    <section style="background:var(--card-bg, #fff); border:1px solid var(--border); border-radius:14px; padding:30px 32px; box-shadow:var(--shadow-xs); display:flex; flex-direction:column; gap:16px;">
         <div style="display:flex; align-items:center; gap:14px;">
-          <span style="flex:none; font-size:30px; line-height:1;">🧗</span>
+          <span aria-hidden="true" style="flex:none; font-size:30px; line-height:1;">🧗</span>
           <h2 style="margin:0; font-size:21px; font-weight:600; letter-spacing:-.4px;">Outside work</h2>
         </div>
         <p style="margin:0; font-size:16px; line-height:1.6; color:var(--slate-700);">You'll find me rock climbing (City Rock or outdoors), mountain biking, trail running, hiking, freediving / snorkelling, kickboxing, gaming, reading (hardcopy books) or travelling. Happy to talk about any of these, for far longer than you'd like.</p>
@@ -683,7 +689,7 @@ html[data-theme="dark"] section:hover{ box-shadow: 0 6px 18px rgba(0,0,0,.45); }
 
       <section style="background:var(--card-bg, #fff); border:1px solid var(--border); border-radius:14px; padding:30px 32px; box-shadow:var(--shadow-xs); display:flex; flex-direction:column; gap:16px;">
         <div style="display:flex; align-items:center; gap:14px;">
-          <span style="flex:none; font-size:30px; line-height:1;">👎</span>
+          <span aria-hidden="true" style="flex:none; font-size:30px; line-height:1;">👎</span>
           <h2 style="margin:0; font-size:21px; font-weight:600; letter-spacing:-.4px;">My dislikes</h2>
         </div>
         <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:13px;">
